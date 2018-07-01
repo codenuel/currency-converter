@@ -16,7 +16,8 @@ self.addEventListener("install", (event) => {
                                'public/css/styles.css',
                                'public/js/converter.js',
                                'public/js/indexedb/idb.js',
-                               'https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css',
+                               'https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet',
+                               'https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css',
                                'https://free.currencyconverterapi.com/api/v5/countries',
                                'https://free.currencyconverterapi.com/api/v5/convert?q=USD_PHP&compact=y',
                                

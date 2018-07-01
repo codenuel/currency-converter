@@ -55,16 +55,6 @@ if ('serviceWorker' in navigator) {
 
 
 
-
-
-
-//   dbPromise.then(db=>{
-//     let countries = db.transaction('countries').objectStore('countries');
-//    return countries.put();
-//    }).then( val => {
-//        console.log('The value result is', val);
-//    });
-
 class FreeCurrencyConverter {
     
     constructor() {
@@ -121,27 +111,7 @@ class FreeCurrencyConverter {
                console.log(json);
                 ratesStore.put(json);
                });
-                // let val = json[query]['val'];
-                // dbPromise.then(db=>{
-                //    const rates = db.transaction('rates', 'readwrite')
-                //    let rateStore = rates.objectStore('rates');
-                //    json.query = query;                    
-                //     // console.log(json);
-                //     rateStore.put(json);
-                //    }).then(val =>{
-                //        console.log('The value result is', val);
-                //    });
-                
-                    // let val = json[query]['val'];
-                // dbPromise.then(db => {
-                //     const rates = db.transaction('rates', 'readwrite')
-                //    const  rateStore = rates.objectStore('rates');
-                //    json.query = query;                    
-                //     console.log(json);
-                //     rateStore.put(json);
-                //    }).then(val =>{
-                //        console.log('The value result is', val);
-                //    });
+               
             console.log('RES',json);
            
             let val = json[query]['val'];
@@ -173,25 +143,7 @@ class FreeCurrencyConverter {
                 });
             })
         });
-    //     .catch((err) => {dbPromise.then(db => {
-    //         let rates = db.transaction('rates');
-    //         let ratesStore = rates.objectStore('rates');
-    //         // json.query = query;
-    //         // console.log(json);
-    //          ratesStore.get(query);
-    //     }).get(query).then(json=> {
-    //         let val = json[query]['val'];
-    //         if (val) {
-    //             let total = val * amount;
-    //             callback(null, Math.round(total * 100) / 100);
-    //         }
-    //         else {
-    //             let err = new Error("Value not found for " + query);
-    //             console.log(err);
-    //             callback(err);
-    //         }
-    //     });
-    // });
+    
   }
 }
 
